@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 28px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    background: hsl(218, 23%, 16%);
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 400px;
+    height: 240px;
+    background: hsl(217, 19%, 24%);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.advice-id{
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 35px;
+}
+
+
+.desc{
+    color: hsl(193, 38%, 86%);
+    width: 350px;
+    text-align: center;
+}
+
+
+.divider{
+    width: 350px;
+    margin-top: 5px;
+}
+
+.dice{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: hsl(150, 100%, 66%);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.dice-img{
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 600px) {
+    .card{
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+}
